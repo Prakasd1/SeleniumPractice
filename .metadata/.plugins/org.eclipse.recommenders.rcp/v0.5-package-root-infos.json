@@ -1,0 +1,10 @@
+[
+  {
+    "symbolicName": "org.webjars.jquery",
+    "version": {
+      "major": 3,
+      "minor": 5,
+      "micro": 1,
+      "qualifier": ""
+    },
+    "jarFileFingerprint": "2b603c0ff3f6fe6438f3634c9aa5602365334d3a"

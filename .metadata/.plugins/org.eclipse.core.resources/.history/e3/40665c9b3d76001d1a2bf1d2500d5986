@@ -1,0 +1,27 @@
+package Selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Amazon {
+
+	public static void main(String[] args)  {
+		// TODO Auto-generated method stub
+		System.setProperty("webdriver.chrome.driver", "C:/Prakash/Automation/chromedriver.exe");
+		//System.setProperty(null, null)
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.amazon.com/");
+		driver.findElement(By.id("twotabsearchtextbox")).sendKeys("samsung mobile");
+		driver.findElement(By.id("nav-search-submit-button")).click();
+		//Thread.sleep(10000);
+		driver.findElement(By.className("a-size-medium a-color-base a-text-normal")).click();
+		driver.findElement(By.name("submit.add-to-cart")).click();
+		driver.findElement(By.className("a-button-input")).click();
+		driver.findElement(By.id("ap_email")).sendKeys("7377514580");
+		driver.findElement(By.id("continue")).click();
+		driver.findElement(By.id("auth-fpp-link-bottom")).click();
+		
+	}
+
+}

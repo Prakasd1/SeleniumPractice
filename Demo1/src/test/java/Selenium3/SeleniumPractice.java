@@ -1,0 +1,12 @@
+package Selenium3;
+
+public class SeleniumPractice {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new ChromeDriver();
+		
+
+	}
+
+}

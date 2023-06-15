@@ -1,0 +1,25 @@
+package Test;
+
+import org.testng.annotations.Test;
+
+public class fourthTest {
+	
+	@Test
+	public void firstFloor()
+	{
+		System.out.println("Only for boys");
+	}
+	
+	@Test
+	public void secondFloor()
+	{
+		System.out.println("Only for girls");
+	}
+	@Test
+	public void thirdFloor()
+	{
+		System.out.println("Only for kids");
+	}
+	
+
+}

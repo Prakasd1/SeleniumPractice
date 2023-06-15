@@ -1,0 +1,20 @@
+package Selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Selenium3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "C:/Prakash/Automation/chromedriver.exe");
+		//System.setProperty(null, null)
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://rahulshettyacademy.com/");
+		driver.findElement(By.className("_2IX_2- VJZDxU")).sendKeys("prakash@gmail.com");
+		driver.findElement(By.className("_2IX_2- _3mctLh VJZDxU")).sendKeys("Tcs@123");
+}
+
+}

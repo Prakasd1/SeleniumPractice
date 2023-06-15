@@ -1,0 +1,24 @@
+package Selenium;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Selenium2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.setProperty("webdriver.chrome.driver", "C:/Prakash/Automation/chromedriver.exe");
+		//System.setProperty(null, null)
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.amazon.in/");
+		driver.findElement(By.className("nav-line-2 ")).click();
+		driver.findElement(By.className("nav-action-inner")).click();
+		driver.findElement(By.id("ap_email")).sendKeys("prakash@gmail.com");
+		driver.findElement(By.id("continue")).click();
+		
+
+	}
+
+}
