@@ -1,0 +1,24 @@
+package coreJavapractice;
+
+interface A
+{
+	int a = 10;
+	int b = 20;
+	
+	default void sum()
+	{
+		System.out.println(a+b);
+	}
+}
+
+
+public class AssignmentInheritance  implements  A {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		A a = new AssignmentInheritance();
+		a.sum();
+
+	}
+
+}

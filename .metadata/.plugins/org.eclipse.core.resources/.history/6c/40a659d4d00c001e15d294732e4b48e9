@@ -1,0 +1,24 @@
+package coreJavapractice;
+
+public class sumArrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a[] = new int [2];
+		a[0] = 10;
+		a[1] = 20;
+		
+		int sum = a[0] + a[1];
+		
+		System.out.println(sum);
+		
+		System.out.println(a[0]);
+		
+		String  str[] = {"Ram", "Rahul", "ajay", "Balia"};
+		System.out.println(str[2]);
+		
+
+	}
+
+}
